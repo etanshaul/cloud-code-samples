@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Develop on Kubernetes" type="google-container-tools-skaffold-run-config" factoryName="google-container-tools-skaffold-run-config-dev" show_console_on_std_err="false" show_console_on_std_out="false">
+  <configuration default="false" name="Run on Kubernetes" type="google-container-tools-skaffold-run-config" factoryName="google-container-tools-skaffold-run-config-dev" show_console_on_std_err="false" show_console_on_std_out="false">
     <option name="allowRunningInParallel" value="false" />
     <option name="cleanupDeployments" value="true" />
     <option name="envVariables" />
@@ -7,11 +7,11 @@
     <option name="kubernetesContext" />
     <option name="mappings">
       <list>
-        <mapping url="/backend" local-file="$PROJECT_DIR$/src/backend" />
-        <mapping url="/frontend" local-file="$PROJECT_DIR$/src/frontend" />
+        <mapping local-file="$PROJECT_DIR$/src/frontend" url="/frontend" />
+        <mapping local-file="$PROJECT_DIR$/src/backend" url="/backend" />
       </list>
     </option>
-    <option name="redeployOnChanges" value="true" />
+    <option name="redeployOnChanges" value="false" />
     <option name="skaffoldConfigurationFilePath" value="$PROJECT_DIR$/skaffold.yaml" />
     <option name="skaffoldNamespace" />
     <option name="skaffoldProfile" />
